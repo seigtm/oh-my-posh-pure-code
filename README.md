@@ -14,7 +14,7 @@ D:\docs\code\oh-my-posh-pure-code git:master ≢ dirty:?1 | staged:+1  3.012s
 ```powershell
 $ompThemesDirectory = Join-Path $env:LOCALAPPDATA 'Programs\oh-my-posh\themes'
 $ompConfig = Join-Path $ompThemesDirectory 'pure-code.omp.json'
-$ompThemeUrl = 'https://raw.githubusercontent.com/seigtm/oh-my-posh-pure-code/main/themes/pure-code.omp.json'
+$ompThemeUrl = 'https://raw.githubusercontent.com/seigtm/oh-my-posh-pure-code/refs/heads/master/pure-code.omp.json'
 
 New-Item -ItemType Directory -Path $ompThemesDirectory -Force | Out-Null
 Invoke-WebRequest -Uri $ompThemeUrl -OutFile $ompConfig
